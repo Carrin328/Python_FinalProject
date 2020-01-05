@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>标题</title>
+</head>
+<body>
+<form method="POST" action="/subpage">
+    <select name="the_region_selected">
+        {% for item in the_select_region %}
+            <option value="{{ item }}">{{ item }}</option>
+        {% endfor %}
+    </select>
+<p><input value='提交!' type='SUBMIT'></p>
+</form>
+{{ the_plot1|safe}}
+{{ the_plot2|safe}}
+{{ the_plot3|safe}}
+{{ the_res|safe }}
+</body>
+</html>
